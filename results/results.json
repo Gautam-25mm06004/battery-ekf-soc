@@ -1,0 +1,141 @@
+{
+  "identification": {
+    "R0": {
+      "true": 0.015,
+      "mean": 0.015021246265742033,
+      "sd": 0.00011792929581501767,
+      "error_pct": 0.1416417716135543
+    },
+    "R1": {
+      "true": 0.01,
+      "mean": 0.010001568510513637,
+      "sd": 0.0001933927323178885,
+      "error_pct": 0.015685105136364896
+    },
+    "C1": {
+      "true": 2500.0,
+      "mean": 2519.2658587769765,
+      "sd": 107.99411664472875,
+      "error_pct": 0.7706343510790692
+    },
+    "tau": {
+      "true": 25.0,
+      "mean": 25.194786975028727,
+      "sd": 1.144468163641568,
+      "error_pct": 0.7791479001149071
+    },
+    "fit_rmse_mV": 2.0000348608608425
+  },
+  "soc": [
+    {
+      "scenario": "model-matched cell: z0 known, unbiased sensor",
+      "cc_rmse_%": 0.01,
+      "cc_final_err_%": 0.02,
+      "ekf_rmse_%": 0.02,
+      "ekf_final_err_%": 0.01,
+      "ekf_bias_rmse_%": 0.03,
+      "ekf_bias_final_err_%": 0.01,
+      "ekf_2sd_coverage": 1.0,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "model-matched cell: initial SOC guess 0.60 (true 0.95)",
+      "cc_rmse_%": 35.0,
+      "cc_final_err_%": 35.01,
+      "ekf_rmse_%": 0.03,
+      "ekf_final_err_%": 0.01,
+      "ekf_bias_rmse_%": 0.03,
+      "ekf_bias_final_err_%": 0.01,
+      "ekf_2sd_coverage": 1.0,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "model-matched cell: current-sensor bias +50 mA",
+      "cc_rmse_%": 2.31,
+      "cc_final_err_%": 4.01,
+      "ekf_rmse_%": 0.66,
+      "ekf_final_err_%": 0.62,
+      "ekf_bias_rmse_%": 0.03,
+      "ekf_bias_final_err_%": 0.01,
+      "ekf_2sd_coverage": 0.13,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "model-matched cell: bias +50 mA and wrong initial SOC",
+      "cc_rmse_%": 37.02,
+      "cc_final_err_%": 39.01,
+      "ekf_rmse_%": 0.66,
+      "ekf_final_err_%": 0.62,
+      "ekf_bias_rmse_%": 0.03,
+      "ekf_bias_final_err_%": 0.01,
+      "ekf_2sd_coverage": 0.128,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "model-matched cell: capacity overestimated by 10%",
+      "cc_rmse_%": 4.23,
+      "cc_final_err_%": 7.27,
+      "ekf_rmse_%": 1.44,
+      "ekf_final_err_%": 1.34,
+      "ekf_bias_rmse_%": 0.29,
+      "ekf_bias_final_err_%": 0.18,
+      "ekf_2sd_coverage": 0.077,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "cell with unmodelled dynamics: z0 known, unbiased sensor",
+      "cc_rmse_%": 0.01,
+      "cc_final_err_%": 0.02,
+      "ekf_rmse_%": 0.6,
+      "ekf_final_err_%": 0.25,
+      "ekf_bias_rmse_%": 1.06,
+      "ekf_bias_final_err_%": 0.23,
+      "ekf_2sd_coverage": 0.149,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "cell with unmodelled dynamics: initial SOC guess 0.60 (true 0.95)",
+      "cc_rmse_%": 35.0,
+      "cc_final_err_%": 35.01,
+      "ekf_rmse_%": 0.6,
+      "ekf_final_err_%": 0.25,
+      "ekf_bias_rmse_%": 1.06,
+      "ekf_bias_final_err_%": 0.23,
+      "ekf_2sd_coverage": 0.155,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "cell with unmodelled dynamics: current-sensor bias +50 mA",
+      "cc_rmse_%": 2.31,
+      "cc_final_err_%": 4.01,
+      "ekf_rmse_%": 1.22,
+      "ekf_final_err_%": 0.85,
+      "ekf_bias_rmse_%": 1.06,
+      "ekf_bias_final_err_%": 0.23,
+      "ekf_2sd_coverage": 0.134,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "cell with unmodelled dynamics: bias +50 mA and wrong initial SOC",
+      "cc_rmse_%": 37.02,
+      "cc_final_err_%": 39.01,
+      "ekf_rmse_%": 1.22,
+      "ekf_final_err_%": 0.85,
+      "ekf_bias_rmse_%": 1.06,
+      "ekf_bias_final_err_%": 0.23,
+      "ekf_2sd_coverage": 0.141,
+      "mean_final_true_soc_%": 15.0
+    },
+    {
+      "scenario": "cell with unmodelled dynamics: capacity overestimated by 10%",
+      "cc_rmse_%": 4.23,
+      "cc_final_err_%": 7.27,
+      "ekf_rmse_%": 0.99,
+      "ekf_final_err_%": 1.07,
+      "ekf_bias_rmse_%": 0.93,
+      "ekf_bias_final_err_%": 0.1,
+      "ekf_2sd_coverage": 0.021,
+      "mean_final_true_soc_%": 15.0
+    }
+  ]
+}
